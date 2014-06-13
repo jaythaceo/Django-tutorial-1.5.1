@@ -1,6 +1,6 @@
 from django import forms
 from django.core.exceptions import ValidationError
-from djnago.forms.models import inLineformset_factory
+from django.forms.models import inlineformset_factory
 
 from contacts.models import (
     Contact,
@@ -40,7 +40,7 @@ class ContactForm(forms.ModelForm):
 
 # inlineformset_factory creates a Class form a parent model (Contact)
 # to a child model (Address)
-ContactAddressFormSet = inLineformset_factory(
+ContactAddressFormSet = inlineformset_factory(
     Contact,
     Address,
 )

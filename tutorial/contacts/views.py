@@ -76,7 +76,7 @@ class CreateContactView(LoggedInMixin, CreateView):
         return context
 
 
-class UpdateContactview(LogggedInMixin, UpdateView):
+class UpdateContactview(LoggedInMixin, UpdateView):
     
     model = Contact
     template_name = 'edit_contact.html'
